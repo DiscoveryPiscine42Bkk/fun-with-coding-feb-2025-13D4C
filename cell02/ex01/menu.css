@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+}
+
+.dpdwn {
+    text-align: center;
+}
+
+select {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+img{
+    justify-content: center;
+    display: flex;
+}
