@@ -37,7 +37,7 @@
 <body>
 
     <div class="calculator">
-        <input type="number" id="leftOperand" min="0" placeholder="Left Operand">
+        <input type="text" id="leftOperand" placeholder="Left Operand">
 
         <select id="operator">
             <option value="+">+</option>
@@ -47,22 +47,25 @@
             <option value="%">%</option>
         </select>
 
-        <input type="number" id="rightOperand" min="0" placeholder="Right Operand">
+        <input type="text" id="rightOperand" placeholder="Right Operand">
+
 
         <input type="submit" value="Try me!" onclick="calculate()" />
     </div>
 
     <script>
-        function calculate() {
-            const leftOperand = parseInt(document.getElementById("leftOperand").value);
+         function calculate() {
+            const leftOperandStr = document.getElementById("leftOperand").value.trim();
             const operator = document.getElementById("operator").value;
-            const rightOperand = parseInt(document.getElementById("rightOperand").value);
-
+            const rightOperandStr = document.getElementById("rightOperand").value.trim();
+            const leftOperand = parseFloat(leftOperandStr);
+            const rightOperand = parseFloat(rightOperandStr);
             if (isNaN(leftOperand) || isNaN(rightOperand)) {
-                alert('Error :(');
-                console.error('Error :(');
+                alert('Error :(\nPlease enter valid numbers.');
+                console.error('Error :(\nPlease enter valid numbers.');
                 return;
             }
+
 
             let result;
 
