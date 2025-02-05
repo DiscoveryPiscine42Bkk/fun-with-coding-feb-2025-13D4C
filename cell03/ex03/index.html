@@ -1,0 +1,85 @@
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <style>
+        body {
+            background-color: rgb(178, 195, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        p {
+            margin: 4px 0;
+            font-weight: 500;
+        }
+
+        .container * {
+            border-radius: 5px;
+        }
+
+        button {
+            border: none;
+            background-color: rgb(228, 52, 52);
+            padding: 8px 12px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: rgb(180, 40, 40);
+        }
+
+        #new {
+            background-color: rgb(96, 157, 255);
+            width: 50%;
+            height: 40px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        #new:hover {
+            background-color: rgb(0, 70, 180);
+        }
+
+        #ft_list {
+            border: none;
+            padding: 16px 12px;
+            margin-top: 10px;
+            background-color: #ff52a3;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+        }
+
+        #ft_list .todo {
+            border: none;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+            background-color: #001936;
+            color: #00ff80;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <center>    
+            <h1 style="color: aliceblue;">Todo List</h1>
+            <button id="new" onclick="newTodo()">New</button>
+        </center>
+        <div id="ft_list"></div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
