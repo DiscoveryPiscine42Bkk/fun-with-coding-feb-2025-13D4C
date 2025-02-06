@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f5;
+        }
+
+        .balloon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="balloon-container">
+        <div id="balloon"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let $balloon = $('#balloon');
+            let scale = 1;
+            let colors = ['red', 'green', 'blue'];
+            let colorIndex = 0;
+
+            function updateBalloon() {
+                $balloon.css({
+                    width: `${200 * scale}px`,
+                    height: `${200 * scale}px`,
+                    backgroundColor: colors[colorIndex]
+                });
+            }
+
+            $balloon.click(function() {
+                if (scale < 2.1) {
+                    scale += 0.05;
+                    colorIndex = (colorIndex + 1) % colors.length;
+                } else {
+                    scale = 1;
+                    colorIndex = 0;
+                }
+                updateBalloon();
+            });
+
+          $balloon.mouseleave(function() {
+                if (scale > 1) {
+                    scale -= 0.025;
+                }
+                if (scale <1){
+                    scale = 1
+                }
+                updateBalloon();
+            });
+
+            updateBalloon(); 
+        });
+    </script>
+</body>
+</html>
