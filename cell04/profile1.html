@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pichaya Portfolio</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('https://i.pinimg.com/originals/32/44/01/324401aa18cc80c55f338dcd4674cb80.gif') center/cover no-repeat fixed;
+        color: white;
+        margin: 0;
+    }
+    .navbar{
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align:right;
+    }
+    .navbar {
+    background-color: #392946;
+    }
+
+    .navbar-brand, .nav-link {
+    color: white !important;
+    }
+
+    .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #392946;
+    margin-top: 20px;
+    }
+    
+    .welcome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        height: 100vh;
+    }
+    button {
+        border-color: transparent;
+        background-color: #FAEF5D;
+        color: #7E2553;
+        margin-top: 30px;
+        height: 50px;
+        width: 200px;
+        border-radius: 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #7E2553;
+        color: #ffffff;
+    }
+
+    .totop {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        background-color: #FAEF5D;
+        color: #7E2553;
+        border: none;
+        max-width: fit-content;
+        margin: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: none;
+    }
+    .expertise-list {
+    list-style: none; 
+    padding-left: 0;
+}
+
+    .expertise-list li::before {
+        content: "★";
+        color: gold; 
+        margin-right: 8px; 
+    }
+
+    .topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #14141480;
+}
+.icon{
+    max-width: 10%;
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="">Pichaya Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./Homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="welcome" id="top">
+        <b><h2>INTRODUCTION TO...<br></b></h2><h1 class="m-4"><b><i>PICHAYA' s</i></b> Portfolio Profile</h1>
+        <p class="font-weight-light">42 Bangkok, Fun With Coding Rush Project</p>
+        <h4>Deliver web page with HTML & CSS & JavaScript </h4>
+        <a href="#profile"><button class="bigger"><b>Learn About Me</b></button></a>
+    </div>
+
+    <div class="topic text-center mt-5 rounded-4 p-4" id="profile">
+        <div class=" row m-4 d-flex flex-column flex-md-row align-items-center">
+            <div class="col-sm text-center">
+                <img src="cream.jpg" alt="pichaya_picture" class="img-fluid rounded-4 w-100" style="object-fit: cover;">
+            </div>
+    
+            <div class="col-sm d-flex flex-column justify-content-center text-start">
+                <h4><b>Information</b></h4>
+                <table class="table table-bordered table-dark">
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <td>Pichaya Phatcharoen</td>
+                        </tr>
+                        <tr>
+                            <th>Years</th>
+                            <td>Junior</td>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <th>Intra</th>
+                            <td>PPHATCHA</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4><b>Expertise</b></h4>
+                <ul class="expertise-list">
+                    <li>Python</li>
+                    <li>HTML & CSS</li>
+                    <li>Network Related Field</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="topic float-left text-center mt-5 right p-4" id="projects">
+        <div class="row m-4 d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
+            
+            <div class="col-sm col-md d-flex flex-column align-items-center">
+                <img src="cream1.jpg" alt="Project 1" class="img-fluid rounded-4 w-100" style="max-height: 300px; object-fit: cover;">
+                <div class="mt-3 bg-secondary bg-opacity-75 p-3 rounded-3 text-white">
+                    <h5>IT CAMP20</h5>
+                    <p>TD & Vice Head of Network</p>
+                </div>
+            </div>
+    
+            <div class="col-sm col-md d-flex flex-column align-items-center">
+                <img src="cream2.jpg" alt="Project 2" class="img-fluid rounded-4 w-100" style="max-height: 300px; object-fit: cover;">
+                <div class="mt-3 bg-secondary bg-opacity-75 p-3 rounded-3 text-white">
+                    <h5>Volunteering and Community services</h5>
+                    <p>restore and rebuild network infrastructure for school</p>
+                </div>
+            </div>
+    
+            <div class="col-sm col-md d-flex flex-column align-items-center">
+                <img src="https://i.pinimg.com/600x315/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.jpg" alt="Project 3" class="img-fluid rounded-4 w-100" style="max-height: 300px; object-fit: cover;">
+                <a href="https://github.com/PichayaPhatcharoen" class="mt-3 w-100">
+                    <div class="bg-secondary bg-opacity-75 p-3 rounded-3 text-white">
+                        <h5>Github</h5>
+                        <p>Click here to view projects.</p>
+                    </div>
+                </a>
+            </div>
+    
+        </div>
+    </div>
+    
+    
+    <div class="topic text-center d-flex flex-column mt-5 " id="contact">
+        <h1><b> CONTACTS</b></h1>
+        <div>
+            <a  href="mailto:6507015@kmitl.ac.th" target="_blank"><img class="icon" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt=""></a>
+            <a  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img class="icon" src="https://cdn0.iconfinder.com/data/icons/social-rounded/72/Youtube-512.png" alt=""></a>
+            <a  href="https://www.facebook.com/pichaya.phatcharoen/" target="_blank"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/social-rounded-2/72/Facebook-512.png" alt=""></a>
+            <a  href="https://www.instagram.com/pichaya.phatcharoen/" target="_blank"><img class="icon" src="https://cdn1.iconfinder.com/data/icons/social-rounded-2/32/instagram-512.png" alt=""></a>
+        </div>
+    </div>
+
+    <button class="totop" onclick="scrollToTop()">Back to Top</button>
+
+        <script>
+            window.onscroll = function () {
+                scrollFunction();
+            };
+    
+            function scrollFunction() {
+                var button = document.querySelector('.totop');
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    button.style.display = 'block';
+                } else {
+                    button.style.display = 'none';
+                }
+            }
+    
+            function scrollToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    <footer class="footer">
+        <p>&copy; 2025 Picha Phatcharoen.</p>
+        <p>Contact us at <a href="https://www.youtube.com/watch?v=9J62hGda9BQ" class="text-white">ลองกดดู ไม่เหมือนของ Atibodee หรอกนะ 😜</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
